@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alculator</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <form>
+        <div>
+             <input type="text" id="first_number"/>
+        </div>
+        <div>
+            <button type="button" onclick="setOperator('+')">+</button>
+            <button type="button" onclick="setOperator('-')">-</button>
+            <button type="button" onclick="setOperator('*')">*</button>
+            <button type="button" onclick="setOperator('/')">/</button>
+            <button type="button" onclick="clearFields()">c</button>
+            <button type="button" onclick="calculate()">=</button>
+        </div>
+        <div>
+            <h3>Result: <span id="result">0</span></h3>
+        </div>
+    </form>
+    <script src="js/calculator.js"></script>
+</body>
+</html>
